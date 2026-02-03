@@ -5,8 +5,6 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-import org.springframework.boot.jackson.autoconfigure.JacksonProperties.Json;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
