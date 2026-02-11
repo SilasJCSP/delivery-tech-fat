@@ -43,6 +43,9 @@ public class ItemPedido {
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal precoUnitario;
 
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal subtotal;
+
 
     // METODO PARA CALCULAR SUBTOTAL AUTOMATICAMENTE
     @PrePersist
@@ -62,5 +65,5 @@ public class ItemPedido {
     // METODO AUXILIAR PARA OBTER VALOR TOTAL DO ITEM
     public BigDecimal getValorTotal() {
         return subtotal != null ? subtotal : BigDecimal.ZERO;
-
+    }
 }
