@@ -2,7 +2,6 @@ package com.deliverutech.delivery_api.controller;
 
 import com.deliverutech.delivery_api.dto.request.ClienteRequest;
 import com.deliverutech.delivery_api.model.Cliente;
-import com.deliverutech.delivery_api.repository.ClienteRepository;
 import com.deliverutech.delivery_api.service.ClienteService;
 import com.deliverutech.delivery_api.dto.response.ApiResponseWrapper;
 
