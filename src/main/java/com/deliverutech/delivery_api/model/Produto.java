@@ -38,7 +38,7 @@ public class Produto {
     private Restaurante restaurante;
 
     public boolean getAtivo() {
-        return this.disponivel != null ? this.disponivel : false;
+        return this.disponivel;
     }
 
     public void setAtivo(boolean ativo) {
