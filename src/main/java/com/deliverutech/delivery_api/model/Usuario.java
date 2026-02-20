@@ -5,8 +5,6 @@ import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.deliverutech.delivery_api.model.Role;
-
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Collections;
@@ -35,6 +33,7 @@ public class Usuario implements UserDetails {
     @Column(nullable = false)
     private Role role;
 
+    @Builder.Default
     private boolean ativo = true;
 
     @Column(name = "data_criacao")
