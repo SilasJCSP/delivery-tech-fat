@@ -17,8 +17,7 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
     List<Pedido> findByClienteId(Long clienteId);
     List<Pedido> findByRestauranteId(Long restauranteId);
     List<Pedido> findByStatus(StatusPedido status);
-       List<Pedido> findByDataPedidoBetween(LocalDateTime inicio, LocalDateTime fim);
-    List<Pedido> findByDataCriacaoBetween(LocalDateTime inicio, LocalDateTime fim);
+    List<Pedido> findByDataPedidoBetween(LocalDateTime inicio, LocalDateTime fim);
 
      // ADICIONAR: Query com JOIN FETCH para carregar itens
     @Query("SELECT p FROM Pedido p LEFT JOIN FETCH p.itens i LEFT JOIN FETCH i.produto WHERE p.id = :id")
